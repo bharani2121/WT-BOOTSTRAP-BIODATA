@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PAGE</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .sidebar {
+            background-color: #343a40;
+            color: white;
+            padding-top: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .sidebar img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+            font-size: large;
+            text-align: center;
+        }
+        .menu li {
+            margin-bottom: 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+        .menu a:hover {
+            background-color: #1e2125;
+        }
+        .content {
+            padding: 50px;
+            background: linear-gradient(skyblue,lightpink);
+        }
+        .styled-table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .styled-table th, .styled-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .styled-table th {
+            background-color: #343a40;
+            color: white;
+            font-weight: bold;
+        }
+        h1 {
+            color: #343a40;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #343a40;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <img src="a.png" alt="Profile Picture">
+                <ul class="menu">
+                    <li><a href="#about" class="btn btn-primary">About</a></li>
+                    <li><a href="#objective" class="btn btn-primary">Objective</a></li>
+                    <li><a href="#education" class="btn btn-primary">Education Details</a></li>
+                    <li><a href="#domain" class="btn btn-primary">Domain</a></li>
+                    <li><a href="#interest" class="btn btn-primary">Area of Interest</a></li>
+                    <li><a href="#programming" class="btn btn-primary">Programming Language</a></li>
+                    <li><a href="#paper" class="btn btn-primary">Paper Presentation</a></li>
+                    <li><a href="#collaboration" class="btn btn-primary">Industry Collaboration</a></li>
+                    <li><a href="#personal" class="btn btn-primary">Personal Details</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 content">
+                <div id="about">
+                    <h1>About</h1>
+                    <p>Bharanidharan D</p>
+                </div>
+                <hr>
+                <div id="objective">
+                    <h1>Objective</h1>
+                    <p>To be committed and efficient in my work and to enhance the growth of the organization by improving and applying my competency at work.</p>
+                </div>
+                <hr>
+                <div id="education">
+                    <h1>Education Details</h1>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Name of the Degree</th>
+                                <th>Name of the Institute</th>
+                                <th>Year of Passing</th>
+                                <th>CGPA/Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>B.Tech IT</td>
+                                <td>Kongu Engineering College, Erode</td>
+                                <td>2026 (Expected)</td>
+                                <td>7.2 (still 2<sup>nd</sup> Sem)</td>
+                            </tr>
+                            <tr>
+                                <td>HSC</td>
+                                <td>Bala matric Higher Secondary School</td>
+                                <td>2022</td>
+                                <td>88%</td>
+                            </tr>
+                            <tr>
+                                <td>SSLC</td>
+                                <td>Bala matric Higher secondary School</td>
+                                <td>2020</td>
+                                <td>88%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <div id="domain">
+                    <h1>Domain</h1>
+                    <p>Web Development</p>
+                </div>
+                <hr>
+                <div id="interest">
+                    <h1>Area of Interest</h1>
+                    <ul>
+                        <li>Database Management System</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </div>
+                <hr>
+                <div id="programming">
+                    <h1>Programming Language</h1>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <hr>
+                <div id="paper">
+                    <h1>Paper Presentation</h1>
+                    <ul>
+                        <li>I have presented papers regarding <strong>Hawkeye Technology</strong> in CIT.</li>
+                        <li>I have also Presented Papers Regarding <strong>Prompt Engineering</strong>in MIT.</li>
+                        <li>In 2023, I delivered a paper presentation on <strong>AR VS VR Technology</strong> at Kongu Engineering College as part of the 'Sign Up' competition.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div id="collaboration">
+                    <h1>Industry Collaboration</h1>
+                    <ol>
+                        <li>I completed my Industrial Visit at <strong>ATEES</strong> Software Limited in Kerala in 2023.</li>
+                        <li>I completed my in-plant training at Phoenix 3Dm in 2023, gaining valuable experience in <strong>Web development.</strong></li>
+                    </ol>
+                </div>
+                <hr>
+                <div id="personal">
+                    <h1>Personal Details</h1>
+                    <p>Father's name: Duraisamy.C</p>
+                    <p>Mother's name: Eswari.D</p>
+                    <p>Address: 96, Merkku valavu thottam (opp) police station karur main road, mulanur-638106.</p>
+                    <p>Father Phone Number: 94437xxxxx</p>
+                    <p>Mother Phone Number: 94437xxxxx</p>
+                </div>
+                <hr>
+                <div id="contact">
+                    <h1>Contact</h1>
+                    <p><b>Gmail Id:</b> bharani2121@gmail.com</p>
+                    <p><b>Phone Number:</b> 8838404144</p>
+                    <p><b>Online Platforms:</b></p>
+                    <p><b>GitHub Profile:</b> <a href="https://github.com/bharani2121" class="btn btn-primary">Visit GitHub</a></p>
+                    <p><b>Hackerrank Profile:</b> <a href="https://www.hackerrank.com/profile/bharani2121" class="btn btn-primary">Visit Hackerrank</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
